@@ -293,16 +293,58 @@ function farm_soil_test_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'log-farm_soil_test-field_farm_time_spent'.
+  $field_instances['log-farm_soil_test-field_farm_time_spent'] = array(
+    'bundle' => 'farm_soil_test',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'How long did this soil test take?',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 6,
+      ),
+    ),
+    'entity_type' => 'log',
+    'field_name' => 'field_farm_time_spent',
+    'label' => 'Time spent',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => ' hour|hours',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 8,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Areas');
   t('Files');
   t('Laboratory');
   t('List the names of soils that are included in this sample. For soil maps and soil names, visit http://websoilsurvey.nrcs.usda.gov/app');
+  t('How long did this soil test take?');
   t('Notes');
   t('Photo(s)');
   t('Sample Points');
   t('Soil Names');
+  t('Time spent');
   t('Use the map to pinpoint the location(s) from which this sample is taken. If you are preparing a soil test, you may be sampling multiple points within a given area. All the points that comprise this sample should be included.');
   t('What areas were this soil sample taken from?');
   t('What laboratory performed the soil test?');
